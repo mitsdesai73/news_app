@@ -40,4 +40,19 @@ COMMON_NEWS_API_PATH = /auto-complete
 PORT = 3001
 ```
       `iii. Run the Server using 'npm start' command.`
+
+## API Testing
+
+#### Get Analytics
+
+```bash
+curl --location --request GET 'localhost:3001/stoke/get-analysis?symbol=AMRN&region=in'
+```
+
+
+#### Get News
+
+```bash
+curl --location --request GET 'localhost:3001/common/auto-complete?q=AMRN&region=in'
+```
     
